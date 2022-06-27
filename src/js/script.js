@@ -1,10 +1,12 @@
-const nome_input = document.querySelector('.nome_input');
-const button = document.querySelector('.login_button');
+function habilitaBotao(){
+    let nome_input = document.querySelector('.nome_input').value;
+    let senha_input = document.querySelector('.senha_input').value;
 
-const validarInput = ({target}) => {
-    if (target.value.length >3){
-        button.removeAttribute('disabled')
+    if (nome_input && senha_input){
+        let button = document.querySelector('.login_button').disabled = false
+        return;
     }
+        document.querySelector('.login_button').disabled = true
 }
 
-nome_input.addEventListener('nome_input', validarInput);
+
