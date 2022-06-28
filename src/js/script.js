@@ -10,3 +10,6 @@ function habilitaBotao(){
 }
 
 
+function abrirLink (){
+    window.location.href = "/src/html/banco.html";
+}
