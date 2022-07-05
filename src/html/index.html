@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/style.css">
     <script src="/src/js/script.js" defer></script>
-    
+
     <title>Banco Front End</title>
 
 </head>
+
 <body>
-    <section >
+    
+    <section>
         <h1>Bem-vindo! </h1>
 
         <figure class="container-left">
-            
+
             <img src="/src/imagens/money-income-animate.svg" alt="imagem login" class="login_img" width="500">
         </figure>
-        
+
         <div class="container-right">
 
             <div class="login-container">
@@ -25,18 +28,24 @@
 
                 <label class="login">
                     <span>Nome</span>
-                    <input type="text" name="username" class="usuario_input nome_input" placeholder="Digite seu Nome" onchange="habilitaBotao()">
+                    <input type="text" name="username" class="usuario_input nome_input" placeholder="Digite seu Nome"
+                        onchange="habilitaBotao()">
                 </label>
 
                 <label class="login">
                     <span>Senha</span>
-                    <input type="password" name="password" class="usuario_input senha_input"  placeholder="Digite sua senha"  onchange="habilitaBotao()">
+                    <input type="password" name="password" id="password" class="usuario_input senha_input"
+                        placeholder="Digite sua senha" onchange="habilitaBotao()">
+                    <button class="olho"> <img src="/src/imagens/close.png" alt="Ocultar senha" height="20"
+                            width="20"></button>
+
                     <button type="button" class="login_button" onclick="abrirLink()" disabled>Acessar</button>
                 </label>
-            <div>
-                
-        </div>
+                <div>
+
+                </div>
 
     </section>
 </body>
-</html>
+
+</html>S
